@@ -5,3 +5,4 @@ EXP
 EXP1
 exp3 + soft +++++
 xxxxxxxxxxxx SDFSDFSDFSDFSDFSFS
+4 после реверта
