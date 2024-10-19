@@ -2,7 +2,7 @@
 
 1. вызвать команду `pass init` (будет создан каталог ~/.password-store)
 2. перейти в каталог `cd ~/.password-store`
-3. склонировать репозиторий `git clone git@github.com:kn7072/pass.git ./`
+3. склонировать репозиторий `git clone git@github.com:che-ig/pass.git ./`
     - расшифровать файл с ключами, лежащими в **kp.tar.gz.gpg**. Чтобы произвести расшифровку и распаковку файла необходимо подготовить пароль для расшифровки. 
         
         Для этого со строкой @!^98Lq^89rB&Zx#JCW4ti$la4#wGVF2ck%En3#@74jdkfmqalnhwnzR2NpdPpJh2Brx*YVz необходимо выполнить ряд действий:
@@ -14,8 +14,8 @@
         1. импортируем публичный ключ `gpg --import public.key`
         2. импортируем приватный ключ `gpg --import private.key`
         
-4. расшифровать базу pass `gpg -d wrap.tar.gz.gpg | tar xzv`
-5. зашифровываем базу обратно `tar cfzv wrap.tar.gz --exclude='wrap.tar.gz' --exclude='kp.tar.gz' --exclude='readme.md' --exclude='.git' . | gpg -e -r фингерпринт_моего_ключа 'wrap.tar.gz'`
+4. расшифровать базу pass, запустив скрипт  `./dectipt.sh`
+5. зашифровываем базу обратно, запустив скрипт `./encript.sh параметр_фингерпринт_вашего_ключа`
 
 #### Мини справка по tar
 - -c Создание нового архивного файла.
