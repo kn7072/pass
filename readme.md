@@ -2,7 +2,7 @@
 
 1. вызвать команду `pass init` (будет создан каталог ~/.password-store)
 2. перейти в каталог `cd ~/.password-store`
-3. склонировать репозиторий `git clone git@github.com:che-ig/pass.git ./`
+3. склонировать репозиторий `git clone git@github.com:kn7072/pass.git ./`
     - расшифровать файл с ключами, лежащими в **kp.tar.gz.gpg**. Чтобы произвести расшифровку и распаковку файла необходимо подготовить пароль для расшифровки. 
         
         Для этого со строкой @!^98Lq^89rB&Zx#JCW4ti$la4#wGVF2ck%En3#@74jdkfmqalnhwnzR2NpdPpJh2Brx*YVz необходимо выполнить ряд действий:
